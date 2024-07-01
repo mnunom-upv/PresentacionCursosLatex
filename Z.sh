@@ -41,10 +41,10 @@ git add ConsideracionesEspeciales/*.*
 git add DiagramaFlujoVaginal/*.*
 git add Conclusion/*.*
 git add Plagio/*.*
-git add imgs/*.*
 git add Intro_SI_2022/*.*
 git add Z.sh
 git add *.tex
+git add *.pdf
 
 
 # Establece una version
