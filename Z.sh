@@ -19,6 +19,10 @@ NombreMateria=PresentacionLA
 NombreMateria=PresentacionPOO_2024
 NombreMateria=PresentacionSI_2024
 
+pdflatex $NombreMateria.tex
+rm *.aux *.log *.nav *.out *.snm *.toc
+open $NombreMateria.pdf
+
 
 
 current=$(date '+%s')
@@ -50,6 +54,4 @@ git push -u origin main
 exit
 
 
-pdflatex $NombreMateria.tex
-rm *.aux *.log *.nav *.out *.snm *.toc
-open $NombreMateria.pdf
+
