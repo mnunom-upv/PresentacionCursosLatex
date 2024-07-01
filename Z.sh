@@ -47,6 +47,8 @@ git commit -m "Version${current}"
 # Hace el Push
 git push -u origin main
 
+exit
+
 
 pdflatex $NombreMateria.tex
 rm *.aux *.log *.nav *.out *.snm *.toc
