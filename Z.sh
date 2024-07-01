@@ -21,7 +21,7 @@ NombreMateria=PresentacionSI_2024
 
 pdflatex $NombreMateria.tex
 rm *.aux *.log *.nav *.out *.snm *.toc
-open $NombreMateria.pdf
+
 
 
 
@@ -50,6 +50,8 @@ git add *.tex
 git commit -m "Version${current}"
 # Hace el Push
 git push -u origin main
+
+open $NombreMateria.pdf
 
 exit
 
