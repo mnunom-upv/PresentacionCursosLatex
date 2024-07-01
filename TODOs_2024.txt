@@ -1,0 +1,51 @@
+NO SOLICITAR ZIP en REPOSITORIO DE Github
+NO ASIGNAR TRABAJO EN EQUIPO EN github classroom
+
+Proyectos Individuales:
+
+El nombre del repositorio debe tener el siguiente formato:
+iti-clavedegrupo_apellidospaternos_apellidosmaternos_nombres
+
+Por ejemplo:
+iti-271086_nuno_maganda_marco_aurelio
+
+Dentro, debe haber una SOLA CARPETA cuyo nombre debe concidir con el nombre del repositorio
+Por ejemplo: iti-271086_nuno_maganda_marco_aurelio
+
+Dentro de esa carpeta debe haber lo siguiente:
+a) Informe PDF (mismo nombre)                           iti-271086_nuno_maganda_marco_aurelio.pdf
+b) Carpeta con Codigo fuente del informe hecho en latex iti-271086_nuno_maganda_marco_aurelio_latex
+c) Codigo fuente del Proyecto solicitado                iti-271086_nuno_maganda_marco_aurelio_fuente 
+
+Proyectos en Equipo:
+
+En un proyecto en equipo, el nombre de la carpeta debe ser:
+iti-271086_uX_eqZZ
+Donde X es la UNIDAD, y ZZ es el numero de equipo a dos digitos
+Por ejemplo: iti-271086_u1_eq01
+
+Dentro de esa carpeta debe haber:
+a) Informe PDF (mismo nombre)                           iti-271086_u1_eq01.pdf
+b) Carpeta con Codigo fuente del informe hecho en latex iti-271086_u1_eq01_latex
+c) Codigo fuente del Proyecto solicitado                iti-271086_u1_eq01_fuente 
+
+Aplicaciones Moviles
+
+Proyectos Individuales:
+Package: upvictoria.iti_271096.uX.apat_amat_nombres
+Nombre de la APP: Z_271096_uX_apat_amat_nombres
+
+Ejemplos: 
+Package: upvictoria.iti_271096.u1.nuno_maganda_marco_aurelio
+Nombre de la APP: Z_271096_u1_nuno_maganda_marco_aurelio
+
+
+Proyectos en Equipo:
+Package: upvictoria.iti_271096.uX.pgY_eqZZ
+Nombre de la APP: Z_271096_uX_pgY_eqZZ
+
+Ejemplos: 
+Package: upvictoria.iti_271096.u1.pg1_eq01
+Nombre de la APP: Z_271096_u1_pg1_eq01
+
+
