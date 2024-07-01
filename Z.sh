@@ -1,3 +1,14 @@
+# Pasos Previos
+#git init
+#git add .
+#git commit -m "Initial Commit"
+#git config --global credential.helper store
+#git branch -M main
+#git remote add origin https://github.com/mnunom-upv/PresentacionCursosLatex.git
+
+# Clonar repositiro remoto a local
+#gh repo clone mnunom-upv/Lista-de-Productos-Academicos-y-de-Investigacion
+
 NombreMateria=PresentacionPM
 NombreMateria=PresentacionFSI
 NombreMateria=PresentacionPM_2024
