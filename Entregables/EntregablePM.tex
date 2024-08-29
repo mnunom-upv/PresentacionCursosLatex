@@ -376,7 +376,7 @@ Z\_CLAVEGRUPO\_UX\_IND\_E$<$NUMEROEQUIPO$>$
 \begin{itemize}
 \item Para las aplicaciones en Asignacion Especial (Cuando deba crear una aplicacion), el nombre de la aplicacion debe tener el siguiente formato (TODO EN MAYUSCULAS):
 
-Z\_CLAVEGRUPO\_AEX\_APAT\_AMAT\_NOMBRE
+Z\_CLAVEGRUPO\_UX\_AE\_APAT\_AMAT\_NOMBRE
 
 \item Donde:
 \begin{itemize}
@@ -388,8 +388,8 @@ Z\_CLAVEGRUPO\_AEX\_APAT\_AMAT\_NOMBRE
 
 \item Ejemplos:
 \begin{itemize}
-\item Z\_ITI-271234\_AE1\_NUNO\_MAGANDA\_MARCO\_AURELIO
-\item Z\_ITI-284433\_AE3\_LOPEZ\_MENDEZ\_AGAPITO\_ALBERTO
+\item Z\_ITI-271234\_U1\_AE\_NUNO\_MAGANDA\_MARCO\_AURELIO
+\item Z\_ITI-284433\_U3\_AE\_LOPEZ\_MENDEZ\_AGAPITO\_ALBERTO
 \end{itemize}
 
 \end{itemize}
@@ -401,10 +401,18 @@ Z\_CLAVEGRUPO\_AEX\_APAT\_AMAT\_NOMBRE
 \begin{itemize}
 \item Si en una asignacion especial se hacen equipos, entonces el formato del nombre de la APP cambiaria a:
 
-Z\_CLAVEGRUPO\_AEX\_EQ$<$NUMEROEQUIPO$>$
+Z\_CLAVEGRUPO\_UX\_AE\_EQ$<$NUMEROEQUIPO$>$
 \item Donde:
 \begin{itemize}
-\item ABC
+\item $CLAVEGRUPO$ es la clave de grupo
+\item $X$ en el numero de unidad en un digito
+\item $<$NUMEROEQUIPO$>$ Va a dos digitos: 01, 02, 03
+\end{itemize}
+
+\item Ejemplos:
+\begin{itemize}
+\item Z\_ITI-271234\_U1\_AE\_EQ01
+\item Z\_ITI-284433\_U3\_AE\_EQ06
 \end{itemize}
 
 \end{itemize}
@@ -415,17 +423,9 @@ Z\_CLAVEGRUPO\_AEX\_EQ$<$NUMEROEQUIPO$>$
 \begin{frame}
 \frametitle{Package de su Aplicaci\'on}
 \begin{itemize}
-\item Para proyectos individuales: \textbf{upvictoria\_sep\_dic\_2024.iti\_271086.pi1u1.nuno\_maganda}
-\item Sustituir iti\_271086 por su GRUPO
-\item Sustituir nuno\_maganda por sus apellidos paterno y materno respectivamente
-\item Ajustar pi1uX para proyectos proyecto invidividuales (proyecto individual 1 unidad X=1,2,3, etc)
-\item Si el proyecto es individual, debe llevar los apellidos paterno y materno
-\item Para proyectos en equipo: \textbf{upvictoria.pm\_sep\_dic\_2023.iti\_271086.pg1uX\_eqYY}
-\item Sustituir iti\_271086 por su GRUPO
-\item Ajustar pg1uX para proyectos en equipo (proyecto grupal 1 unidad X = 1,2,3, etc) -
-\item donde YY es el numero del equipo a dos digitos
-\item Para asignaciones especiales: upvictoria.pm\_sep\_dic\_2023.iti\_271086.ae1uX.nuno\_maganda
-\item  donde X es el numero de unidad X (1, 2, etc) 
+\item Al crear su aplicacion y poner el nombre especificado, se crea en automatico el package \textit{com.example.$<$el nombre de su aplicacion$>$}
+\item Debe remover el \textit{.example} del nombre del package, esto es, debe quedar \textit{com.$<$el nombre de su aplicacion$>$}
+\includegraphics{Entregables/PaqueteAndroidStudio.png}
 \end{itemize}
 
 \end{frame}
