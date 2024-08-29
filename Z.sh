@@ -18,6 +18,8 @@ NombreMateria=PresentacionLA
 NombreMateria=PresentacionPOO_2024
 NombreMateria=PresentacionSI_2024
 
+NombreMateria=PresentacionPM_2024_SEP-DIC
+
 
 pdflatex $NombreMateria.tex
 rm *.aux *.log *.nav *.out *.snm *.toc
