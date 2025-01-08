@@ -17,6 +17,7 @@ NombreMateria=PresentacionLA
 
 NombreMateria=PresentacionPOO_2024
 NombreMateria=PresentacionSI_2024
+NombreMateria=PresentacionSI_2025
 
 
 pdflatex $NombreMateria.tex
