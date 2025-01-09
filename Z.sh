@@ -24,6 +24,7 @@ pdflatex $NombreMateria.tex
 rm *.aux *.log *.nav *.out *.snm *.toc
 
 
+open $NombreMateria.pdf
 
 
 current=$(date '+%s')
