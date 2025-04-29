@@ -20,6 +20,7 @@ NombreMateria=PresentacionSI_2024
 NombreMateria=PresentacionSI_2025
 
 NombreMateria=PresentacionPM_2025
+NombreMateria=PresentacionPI1_2025
 
 
 pdflatex $NombreMateria.tex
