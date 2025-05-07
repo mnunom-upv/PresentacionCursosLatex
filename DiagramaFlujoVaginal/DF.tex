@@ -38,7 +38,7 @@ fill=green!30]
 
 \node (start) [startstop] {Inicio};
 %\node (in1) [io, below of=start] {Input};
-\node (prot1) [process, below of=start] {Programar (o corregir) aplicaci\'on y/o informe en base a lo solicitado};
+\node (prot1) [process, below of=start] {Programar aplicaci\'on y/o informe en base a lo solicitado};
 
 \node (pro1) [process, below of=prot1] {Cargar proyecto en Classroom};
 
@@ -50,7 +50,9 @@ fill=green!30]
 
 \node (pro2a) [process, below of=dec2, yshift=-1.5cm] {Se procede a evaluarlo de acuerdo a la r\'ubrica};
 
-\node (pro2b) [process, right of=pro1, xshift=5cm] {Se realizan observaciones, se marca como REGRESADO y se penaliza con 5 puntos};
+\node (pro2b) [process, left of=dec2, xshift=-5cm] {Se aplican penalizaciones \\ y se procede a evaluarse};
+
+\node (pro2c) [process, right of=pro1, yshift=-10cm, xshift=5cm] {Se considera proyecto nulo  \\ se asigna otro proyecto de mayor complejidad};
 %\node (out1) [io, below of=pro2a] {Output};
 \node (stop) [startstop, below of=pro2a] {Final};
 
@@ -61,13 +63,14 @@ fill=green!30]
 \draw [arrow] (dec1) -| node[anchor=east,yshift=-0.5cm] {no} (pro2b);
 
 \draw [arrow] (dec2) -- node[anchor=east] {si} (pro2a);
-\draw [arrow] (dec2) -| node[anchor=east,yshift=-0.5cm] {no} (pro2b);
+\draw [arrow] (dec2) -| node[anchor=east,yshift=-0.5cm] {no} (pro2c);
 
 
 %\draw [arrow] (pro2b) |- (prot1);
 %\draw [arrow] (pro2b) |- node[anchor=north] {} (pro1);
-\draw [arrow] (pro2b) |- (prot1);
+\draw [arrow] (pro2b) -- (dec2);
 \draw [arrow] (pro2a) -- (stop);
+\draw [arrow] (pro2c) |- (stop);
 %\draw [arrow] (out1) -- (stop);
 
 \end{tikzpicture}
