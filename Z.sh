@@ -24,6 +24,7 @@ NombreMateria=PresentacionPI1_2025
 NombreMateria=PresentacionPM_2025
 NombreMateria=PresentacionDAM_2025
 NombreMateria=PresentacionDAM_2026
+NombreMateria=PresentacionSI_2026
 
 pdflatex $NombreMateria.tex
 rm *.aux *.log *.nav *.out *.snm *.toc
